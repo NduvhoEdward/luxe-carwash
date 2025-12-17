@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* -------------------------------------------------- */
+/* Design tokens                                      */
+/* -------------------------------------------------- */
+@layer base {
+  :root {
+    --background: 38 100% 97%;
+    --foreground: 0 0% 10%;
+
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 30% 12%;
+    --secondary-foreground: 0 0% 80%;
+
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 10%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 70%;
+
+    --radius: 0.625rem;
+  }
+
+  .dark {
+    --background: 0 0% 10%;
+    --foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 220 30% 20%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 36 100% 50%;
+    --accent-foreground: 0 0% 10%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 40%;
+  }
+
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+}
+
+/* -------------------------------------------------- */
+/* UX polish                                          */
+/* -------------------------------------------------- */
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
