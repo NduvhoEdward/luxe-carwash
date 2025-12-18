@@ -29,12 +29,15 @@ export default function Navigation() {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center space-x-2">
+          <button
+            onClick={() => scrollToSection('home')}
+            className="flex items-center space-x-2 hover:opacity-80 transition-opacity"
+          >
             <div className="w-10 h-10 bg-gradient-to-br from-gray-300 via-gray-400 to-gray-500 rounded-full flex items-center justify-center shadow-lg">
               <span className="text-black font-bold text-xl">L</span>
             </div>
             <span className="text-white font-light text-xl tracking-wider">LUXE</span>
-          </div>
+          </button>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">

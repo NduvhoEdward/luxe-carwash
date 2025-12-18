@@ -42,9 +42,12 @@ export default function Hero() {
         </div>
       </div>
 
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+      <button
+        onClick={() => scrollToSection('services')}
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 hover:opacity-80 transition-opacity"
+      >
         <ChevronDown className="text-gray-300 animate-bounce" size={32} />
-      </div>
+      </button>
     </section>
   );
 }

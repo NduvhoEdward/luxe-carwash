@@ -13,7 +13,7 @@ export default function Footer() {
           <span className="text-white font-light text-lg tracking-wider">LUXE</span>
         </div>
         <p className="text-gray-500 text-sm mb-2">Where Luxury Meets Clean</p>
-        <p className="text-gray-600 text-xs">© 2024 Luxe Car Wash & Lounge. All rights reserved.</p>
+        <p className="text-gray-600 text-xs">© 2025 Luxe Car Wash & Lounge. All rights reserved.</p>
       </div>
     </footer>
   );
